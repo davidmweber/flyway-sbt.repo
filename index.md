@@ -15,3 +15,13 @@ resolvers += "Flyway" at "https://davidmweber.github.io/flyway-sbt.repo"
 addSbtPlugin("org.flywaydb" % "flyway-sbt" % "4.2.0")
 ```
 
+
+If you are interested in testing a version that does not automatically trigger other
+tasks, use the following configuration:
+
+```
+addSbtPlugin("org.flywaydb" % "flyway-sbt" % "4.2.1-SNAPSHOT")
+```
+
+Note that this requires an explicit ``enablePlugins(FlywayPlugin)`` to be added to your build file.
+
